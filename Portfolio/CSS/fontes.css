@@ -1,0 +1,16 @@
+nome {
+    text-align: center;
+    font-family: "Arial";
+    color: blue;
+}
+formacao {
+    text-align: center;
+    font-family: "Helvetica";
+    color: green;
+    
+}
+cursostrabalhos{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: red;
+}
