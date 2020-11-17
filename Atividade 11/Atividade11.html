@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 11</title>
+    <script>
+        function validarDados(){
+		txt = document.forms.formulario1.elements[0].value;
+		
+		var x = document.forms.formulario1.elements[1].value;
+        var y = document.forms.formulario1.elements[2].value;
+        if(x.checked==true)
+            document.forms.formulario1.elements[0].value=txt.toUpperCase;
+        if(y.checked==true)
+            document.forms.formulario1.elements[0].value=txt.toLowerCase;}
+	</script>
+</head>
+
+<body>
+    <form action="teste" method="POST" name="formulario1" id="formulario1" onsubmit="return validarDados();">
+        Nome Completo:
+        <input name="idNome" type="text" id="idNome" size="52" maxlength="150">
+        <br>
+        <br>
+        ESCOLHA1: <input type="checkbox" name="check" oncheck="validarDados()" >
+        ESCOLHA2: <input type="checkbox" name="check" oncheck="validarDados()" >
+        <input name="Submit" type="submit" form="formulario1" value="Submit">
+    </form>
+</body>
+
+</html>
